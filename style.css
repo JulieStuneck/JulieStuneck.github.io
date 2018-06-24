@@ -1,0 +1,195 @@
+*{
+	font-family: sans-serif;
+	Line-height: 1.618em;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header,
+main {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+body {
+	margin: 0;
+}
+
+.grid-container {
+  background-color: #bbb;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+  grid-template-rows:100px 300px auto auto auto;
+  margin: 2rem auto;
+  padding: 10px;
+  max-width: 1000px;
+  width 90%;
+} 
+
+
+.grid-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+
+	font-family: sans-serif;
+	background: navy;
+}
+
+nav ul {
+	list-style-type: none;
+	color: white;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+}
+
+header a {
+	color: white;
+	padding: .5em 2em;
+	text-decoration: none;
+}
+
+main ul {
+	list-style-type: none;
+}
+
+
+.banner {
+	grid-column: 1/-1;
+	flex-direction: column;
+	background-image: url("./images/bannerBack.jpg");
+	height: auto;
+	background-position: center;
+	background-size: cover;
+	position: relative;*/
+}
+
+.banner-text h1 {
+	color: white;
+}
+
+.hero-text p {
+	color: #ccc;
+}
+
+.skills{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
+.JSImage {
+	width: 200px;
+	border: 1px solid #333;
+}
+
+
+.about {
+	display: flex;
+	grid-column: 1/-1;
+	flex-direction: row;
+}
+
+.projectsBanner {
+	grid-column: 1/-1;
+	flex-direction: column;
+}
+
+about{
+	background-color: #222;
+}
+
+.projects {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;  
+}
+
+.contentImage {order-radius: 95%;
+  border-radius:95%;
+  width: 200px;
+  height: 200px;
+  tansition: transform 400ms ease-out;
+  box-shadow: 0.3rem 0.4rem rgba(0, 0, 0, 0.4);
+ }
+
+.contentImage:hover {
+  transform:scale(1.15);
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	grid-column: 1/-1;
+
+	font-family: sans-serif;
+	background: navy;
+}
+
+footer ul {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+
+	color: white;
+	list-style-type: none;
+}
+
+footer a {
+	display: flex;
+	color: white;
+	padding: .5em 2em;
+	text-decoration: none;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  margin: .1em;
+}
+
+.fa-github {
+  background: #000;
+  color: white;
+  margin: .1em;
+}
