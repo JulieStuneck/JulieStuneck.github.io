@@ -24,9 +24,9 @@ main {
   background-color: #aaa;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;  
-  grid-template-rows:300px 300px auto auto auto;
+  grid-template-rows:300px 300px auto auto auto auto;
   margin: 2rem auto;
-  padding: 20px;
+  padding: 2px;
   max-width: 1000px;
   width 90%;
 } 
@@ -62,7 +62,7 @@ nav ul {
 	display: flex;
 	list-style-type: none;
 	color: white;
-	font-size: 18px;
+	font-size: 20px;
 	flex-flow: row;
 	justify-content: space-around;
 	align-content: space-around;
@@ -91,24 +91,25 @@ main ul {
 .banner {
 	grid-column: 1/-1;
 	flex-direction: column;
-	background-image: url("./images/bannerBack.jpg");
+	background-image: url("./images/bannerBack3.jpg");
 	height: auto;
 	background-position: center;
 	background-size: cover;
-	justify-content: center;
-}
+}	
 
 .banner-text h1 {
 	font-size: 70px;
 	font-family: 'Poiret One', sans-serif;
 	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	padding-left: 125px;
 }
 
 .banner-text p {
 	font-size: 50px;
 	font-family: 'Poiret One', sans-serif;
 	color: white;
-	
+	padding-left: 215px;	
 }
 
 .skills{
@@ -119,36 +120,39 @@ main ul {
 
 	font-size: 20px;
 	font-family: 'Poiret One', sans-serif;
-	color: #eee;
+	color: white;
 }
 
 
 .JSImage {
-	width: 200px;
+	width: 225px;
 	border-radius: 50%;	
+	tansition: transform 400ms ease-out;
+  	box-shadow: 5px 6px 5px 1px #bbb;
 }
 
 
-.about {
+.about, .contactInfo {
 	display: flex;
 	grid-column: 1/-1;
 	flex-direction: row;
 	padding: 20px;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding-right: 25px;
+	padding-left: 25px;
 
 	font-family: sans-serif;
 	font-size: 18px;
 	color: #334560;
-	background-color: #eee;
+	
 }
 
-.projectsBanner {
+.projectsBanner, .contactInfoBanner {
 	grid-column: 1/-1;
 	flex-direction: column;
 	font-family: 'Poiret One', sans-serif;
+	justify-content: center;
 	color: white;
-	background-image: url("./images/bannerBack.jpg");
+	background-image: url("./images/bannerBack3.jpg");
 }
 
 .projects {
@@ -156,6 +160,13 @@ main ul {
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
+}
+
+h4 {
+	font-family: sans-serif;
+	font-size: 15px;
+	color: #334560;
+	font-weight: normal;
 }
 
 .content {
@@ -175,22 +186,35 @@ main ul {
   transform:scale(1.15);
 }
 
+.contactInfo ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: space-between;
+}
+
+.contactInfo li {
+	display: flex;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 h3{
-	font-family: sans-serif;
-	font-size: 18px;
+	font-family: 'Poiret One', sans-serif;
+	font-weight: bold
+	font-size: 20px;
 	color: #334560;
 }
 
+
+
 footer {
 	width: 100%;
-	height: 40px;
+	height: auto;
 	bottom: 0;
 	left: 0;
-
 	display: flex;
-	flex-flow: row;
-	justify-content: center;
-
+	flex-flow: row;		
 	font-family: sans-serif;
 	background: : #42597c;
 }
@@ -201,15 +225,13 @@ footer ul {
 	color: white;
 	font-size: 18px;
 	flex-flow: row;
-	justify-content: space-around;
-	align-content: space-around;
 	background: #42597c;
-
 }
 
 footer li {
-	font-size: 20px;
-	justify-content: space-around;
+	font-size: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
 	background: #42597c;
 }
 
