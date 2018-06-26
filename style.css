@@ -24,11 +24,12 @@ main {
   background-color: #aaa;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;  
-  grid-template-rows:300px 300px auto auto auto auto;
+  grid-template-rows:300px 300px auto 300px auto auto;
   margin: 2rem auto;
   padding: 2px;
   max-width: 1000px;
   width 90%;
+  box-shadow: 5px 6px 5px 1px #bbb;
 } 
 
 
@@ -37,7 +38,7 @@ main {
 	align-items: center;
 	justify-content: center;
 
-	background-image: url("images/pageBckrnd.jpg");
+	background-image: url("images/gray.jpg");
    background-color: #cccccc;
    background-repeat: no-repeat;
    background-size: cover;
@@ -127,8 +128,7 @@ main ul {
 .JSImage {
 	width: 225px;
 	border-radius: 50%;	
-	tansition: transform 400ms ease-out;
-  	box-shadow: 5px 6px 5px 1px #bbb;
+	box-shadow: 5px 6px 5px 1px #bbb;
 }
 
 
@@ -165,7 +165,7 @@ main ul {
 h4 {
 	font-family: sans-serif;
 	font-size: 15px;
-	color: #334560;
+	color: white;
 	font-weight: normal;
 }
 
@@ -186,30 +186,24 @@ h4 {
   transform:scale(1.15);
 }
 
-.contactInfo ul {
+
+.contactInfo  {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	align-content: space-between;
 }
 
-.contactInfo li {
-	display: flex;
-	padding-left: 30px;
-	padding-right: 30px;
-}
 
 h3{
 	font-family: 'Poiret One', sans-serif;
 	font-weight: bold
 	font-size: 20px;
-	color: #334560;
+	color: white;
 }
 
 
 
-footer {
-	width: 100%;
+.footer {
 	height: auto;
 	bottom: 0;
 	left: 0;
@@ -217,9 +211,14 @@ footer {
 	flex-flow: row;		
 	font-family: sans-serif;
 	background: : #42597c;
+	width: 100%;
+	justify-content: center;
 }
 
-footer ul {
+
+
+/*footer ul {
+	
 	display: flex;
 	list-style-type: none;
 	color: white;
@@ -233,13 +232,13 @@ footer li {
 	padding-left: 20px;
 	padding-right: 20px;
 	background: #42597c;
-}
+}*/
 
 footer a {
 	background: #42597c;
 }
 
-footer li a:hover {
+footer a:hover {
     background-color: #555;
     color: white;
 }
