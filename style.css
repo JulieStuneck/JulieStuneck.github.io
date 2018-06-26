@@ -20,29 +20,6 @@ main {
 }
 
 
-.grid-container {
-  background-color: #aaa;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;  
-  grid-template-rows:300px 300px auto 300px auto auto;
-  margin: 2rem auto;
-  padding: 2px;
-  max-width: 1000px;
-  width 90%;
-  box-shadow: 5px 6px 5px 1px #bbb;
-} 
-
-
-.grid-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	background-image: url("images/gray.jpg");
-   background-color: #cccccc;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
 
 nav {
 	position: fixed;
@@ -74,6 +51,7 @@ nav a {
 }
 
 nav li a:hover {
+	height: 40px;
     background-color: #555;
     color: white;
 }
@@ -83,6 +61,31 @@ header a {
 	padding: .5em 2em;
 	text-decoration: none;
 } 
+
+
+.grid-container {
+  background-color: #aaa;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+  grid-template-rows:300px 300px auto 300px auto auto;
+  margin: 2rem auto;
+  padding: 2px;
+  max-width: 1000px;
+  width 90%;
+  box-shadow: 5px 6px 5px 1px #bbb;
+} 
+
+
+.grid-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-image: url("images/gray.jpg");
+   background-color: #cccccc;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
 
 main ul {
 	list-style-type: none;
@@ -107,10 +110,10 @@ main ul {
 }
 
 .banner-text p {
-	font-size: 50px;
+	font-size: 60px;
 	font-family: 'Poiret One', sans-serif;
 	color: white;
-	padding-left: 215px;	
+	padding-left: 65px;	
 }
 
 .skills{
@@ -232,17 +235,18 @@ h3{
 
 
 .footer {
-	height: auto;
+	height: 40px;
 	bottom: 0;
 	left: 0;
 	display: flex;
 	flex-flow: row;		
 	font-family: sans-serif;
-	background: : #42597c;
+	background: #42597c;
 	width: 100%;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 .footer p {
+	color: white;
 	font-size: 15px;
 }
