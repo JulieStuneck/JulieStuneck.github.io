@@ -2,11 +2,11 @@
  const items = document.querySelectorAll('li');
 
 for(let i=0; i<items.length; i++){
-	items[i].addEventListener('mouseover', function(){
-		this.style.fontSize = "120%"; 
+    items[i].addEventListener('mouseover', function(){
+        this.style.fontSize = "150%"; 
 }); 
 items[i].addEventListener('mouseout', function(){
-		this.style.fontSize = "100%"; 
+        this.style.fontSize = "100%"; 
 }); 
 }
 
