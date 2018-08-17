@@ -440,9 +440,8 @@ h3{
     text-decoration: none;
 }
 
-/*Slide show for Project 3*/
 
-#slideshow { 
+#slideshow1, #slideshow2, #slideshow3 { 
     border-radius: 95%;
     position: relative; 
     width: 200px; 
@@ -451,7 +450,7 @@ h3{
     box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 }
 
-#slideshow img{
+#slideshow1 img, #slideshow2 img, #slideshow3 img {
   border-radius: 95%;
   width: 200px;
   height: 200px;
@@ -459,7 +458,7 @@ h3{
   box-shadow: 0.3rem 0.4rem rgba(0, 0, 0, 0.4); 
 }
 
-#slideshow > div { 
+#slideshow1  > div , #slideshow2  > div , #slideshow3  > div { 
     position: absolute; 
     top: 1px; 
     left: 1px; 
@@ -467,7 +466,8 @@ h3{
     bottom: 10px; 
 }
 
-#slideshow:hover {
+#slideshow1:hover, #slideshow2:hover, #slideshow3:hover {
   transform:scale(1.15);
   transition: transform 400ms ease-out;
 }
+
