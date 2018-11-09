@@ -117,7 +117,7 @@ h3 {
 .hero-image1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/back6.jpg");
  /* padding: 7rem 0rem 7rem 9rem;*/
-  padding: 18rem;
+  padding: 18rem 0rem;
   height: 100%;
   background-attachment: fixed;
   background-position: center;
