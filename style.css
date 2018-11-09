@@ -13,7 +13,7 @@ body {
 .about-text {
   color: #004d99;
   font-size: 1.25rem;
-  padding: 2em 5em;
+  padding: 2em 3em;
 }
 
 .btn-primary, .modal-content button {
@@ -116,7 +116,8 @@ h3 {
 
 .hero-image1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/back6.jpg");
-  padding: 7rem 0rem 7rem 9rem;
+ /* padding: 7rem 0rem 7rem 9rem;*/
+  padding: 18rem;
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -179,14 +180,14 @@ nav {
   z-index: 1; 
 }
 
-.phone {
-  display: flex;
-}
-
 .navName {
   color: white;
   font-family: Poiret One;
   font-size: 1.5em;
+}
+
+.phone {
+  display: flex;
 }
 
 .projects {   
