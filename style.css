@@ -221,8 +221,9 @@ nav {
 }
 
 .skills-list li:hover {
-  color: silver;
   font-size: 125%;
+  background-image: url("./images/sparkle.png");
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 900px) {
