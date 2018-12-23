@@ -16,16 +16,13 @@
 
   <body>
     <!-- Hero Image and Page Banner -->
-    <article class="hero-image1">
+    <article class="hero-image1"> 
       <section class="hero-text1">       
         <h1>Julie Stuneck</h1>
         <h2>Web Developer</h2>
-      </section>
-      <aside class="skills-list">
-        <ul>
-          <li>Java </li>         
-          <li>Spring </li>         
-          <li>TDD </li>
+      </section>     
+      <aside class="skills-list star">
+        <ul>          
           <li>JavaScript</li>
           <li>HTML5</li>
           <li>CSS3</li>
@@ -33,38 +30,40 @@
           <li>Flexbox</li>
           <li>Bootstrap</li>
           <li>React</li>
+          <li>Java </li>         
+          <li>Spring </li>         
+          <li>TDD </li>
           <li>Git</li>
           <li>Agile</li>
         </ul>
-      </aside>   
+      </aside>      
     </article>
 
     <!-- Navbar -->
     <nav class="sticky navbar fixedattop navbar-expand-lg navbar-dark bg-dark text-white">
-        <!-- hamburger menu on smaller screens -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- nav links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>  
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>      
-            <li class="nav-item">
-              <a class="nav-link" href="#getInTouch">Get In Touch</a>
-            </li>                
-          </ul>
-        </div><!-- nav links -->
-        <div class="navName">
-          <p>Julie Stuneck - Web Developer</p>
-        </div>
-      </nav>
-
+      <!-- hamburger menu on smaller screens -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- nav links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>      
+          <li class="nav-item">
+            <a class="nav-link" href="#getInTouch">Get In Touch</a>
+          </li>                
+        </ul>
+      </div><!-- nav links -->
+      <div class="navName">
+        <p>Julie Stuneck - Web Developer</p>
+      </div>
+    </nav>
 
     <!--  About & Pic -->
     <article class="grid-item about row" id="about">
@@ -102,7 +101,6 @@
       <figure>
         <img class="JSImage" src="./images/JS.jpg" alt="Stuneck">
       </figure>
-
     </article> <!--  About & Pic -->
 
     <!-- Recent Projects -->
@@ -125,6 +123,18 @@
 
       <!-- 2nd Project -->
         <figure class="card col-lg-3 col-md-3 col-xs-6" style="width: 18rem;">
+          <img class="card-img-top" src="./images/meme.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Meme-Generator</h5>
+            <p class="card-text">Create your own meme. Choose a picture and enter your own text.</p>
+            <p class="skills-used">React, ES6, HTML, CSS, CSS Grid, Flexbox, </p>
+            <a href="https://juliestuneck.github.io/meme-generator/" class="btn btn-primary">Try It</a>
+            <a href="https://github.com/JulieStuneck/meme-generator" class="btn btn-primary">See the Code</a>
+          </div>
+         </figure>
+
+         <!-- 3rd Project -->
+        <figure class="card col-lg-3 col-md-3 col-xs-6" style="width: 18rem;">
           <img class="card-img-top" src="./images/bevReviews2.JPG" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Beverage Reviews</h5>
@@ -134,7 +144,7 @@
           </div>
          </figure>
 
-      <!-- 3rd Project -->
+      <!-- 4th Project -->
           <figure class="card col-lg-3 col-md-3 col-xs-6" style="width: 18rem;">
             <div class="card-body star-wars">
               <h2>Star Wars Quiz</h2>
@@ -161,7 +171,7 @@
             </div>
           </figure>
 
-      <!-- 4th Project -->
+      <!-- ?th Project -->
           <!--  <figure class="card col-lg-3 col-md-3 col-xs-6" style="width: 18rem;">
               <img class="card-img-top" src="./images/book.jpg" alt="Card image cap">
               <div class="card-body">
@@ -180,12 +190,12 @@
         <h2>Get In Touch</h2>
       </div>
       
-      <div class="contactDetails">
+      <div class="contactDetails col-lg-12 col-md-12 col-xs-6">
         <div>
-          <p >(330) 655-2883</p>
+          <p>(330) 655-2883</p>
         </div>
         <div>
-         <p class="col-lg-3 col-md-3 col-xs-6">jbstuneck@yahoo.com</p>
+         <p>jbstuneck@yahoo.com</p>
         </div>
         <div>
           <a href="https://github.com/JulieStuneck" class="fa fa-github col-lg-3 col-md-3 col-xs-6"></a>
@@ -194,7 +204,7 @@
       </div>  
     </article>
 
-      <footer class="footer bg-dark text-white">       
+      <footer class="footer bg-dark text-white">     
         <p>&copy2018 Julie Stuneck</p>      
       </footer>
 
